@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L16 0L16 16L0 16L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="eye-off" transform="translate(0.75 0.75)">
+    <path d="M0 0L16 0L16 16L0 16L0 0Z" id="eye-off-(BackgroundMask)" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M7.33333 10.6667C2.66667 10.6667 0 5.33335 0 5.33335C0.82926 3.78795 1.97942 2.43775 3.37333 1.37335L11.2933 9.29335C10.1537 10.162 8.76607 10.6433 7.33333 10.6667ZM8.74667 6.74668C8.56357 6.94318 8.34277 7.10079 8.09743 7.2101C7.8521 7.31941 7.58727 7.37819 7.31873 7.38293C7.05019 7.38766 6.78344 7.33827 6.53441 7.23768C6.28537 7.13709 6.05915 6.98737 5.86923 6.79745C5.67931 6.60753 5.52959 6.38131 5.42901 6.13228C5.32842 5.88324 5.27902 5.6165 5.28376 5.34796C5.28849 5.07941 5.34727 4.81458 5.45658 4.56925C5.5659 4.32392 5.7235 4.10312 5.92 3.92002M5.93333 0.160017C6.39222 0.052603 6.86204 -0.00109072 7.33333 1.67878e-05C12 1.67878e-05 14.6667 5.33335 14.6667 5.33335C14.262 6.09042 13.7794 6.80317 13.2267 7.46001" transform="translate(0.66667175 2.6666522)" id="Vector" fill="none" stroke="#8B8B8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 0L14.6667 14.6667" transform="translate(0.66667175 0.6666677)" id="Vector" fill="none" fill-rule="evenodd" stroke="#8B8B8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>
