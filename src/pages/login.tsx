@@ -11,7 +11,7 @@ import { LoginSchema } from '../utils/schemas';
 
 const LoginPage = () => {
   console.log("inside login page,page reloaded")
-  const { login } = useAuth();
+  const { login,user,password } = useAuth();
   const [errors, setErrors] = useState<any>({});
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

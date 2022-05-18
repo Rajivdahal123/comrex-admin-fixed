@@ -15,7 +15,9 @@ function AuthProvider(props: any) {
   const router = useRouter();
   const [user, setUser] = useState<User>();
   const [loading, setIsLoading] = useState<boolean>();
+  const [password, setUserPassword] = useState<User>();
 
+  console.log("password in password is",password)
   const fetchCurrentUser = async () => {
     try {
       setIsLoading(true);
@@ -141,14 +143,13 @@ function AuthProvider(props: any) {
   const resetPassword = async (password: string) => {
     try {
       setIsLoading(true);
-
       const { token } = Router.query;
-
+      setUserPassword(password)
       const res = await AuthApi.resetPassword(user?.email, password, token);
-
+      console.log("response is")
       if (res.user) {
         setUser(res.user);
-        await Router.push('/login');
+        // await Router.push('/login');
       }
       if (res.accessToken) {
         localStorage.setItem(secretKey, res.accessToken);
@@ -230,7 +231,8 @@ function AuthProvider(props: any) {
         updateUserPass,
         moderatorEmailVerify,
         loading,
-        updateCodec
+        updateCodec,
+        password
       }}
       {...props}
     />

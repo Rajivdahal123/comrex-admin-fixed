@@ -12,14 +12,14 @@ import { ResetPasswordSchema } from '../../utils/schemas';
 import { fromPairs } from 'lodash';
 
 const ResetPassword = () => {
-  const { resetPassword } = useAuth();
+  const { resetPassword,login } = useAuth();
   const [errors, setErrors] = useState<any>({});
 
   const onSubmit = (values: any) => {
-    console.log("inside onsubmit")
+    console.log("inside onsubmit",values)
     resetPassword(values.password)
     .then(resp => {
-      router.replace('/login');
+      login(resp.email,values.password)
     }).catch(() => {
       setErrors({
         credential: 'The email or password you entered is incorrect.',

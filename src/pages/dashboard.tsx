@@ -118,7 +118,6 @@ const DashboardPage = () => {
 
   }, [actionType, selectedUser, selectedIndex])
   const callback=(value)=>{
-    console.log("insdie callback")
     setModeratorDisable(value)
   }
 
